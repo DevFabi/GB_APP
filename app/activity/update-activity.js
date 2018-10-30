@@ -12,6 +12,12 @@ $(document).ready(function(){
 		    var price = data.price;
 		    var category_id = data.category_id;
 		    var category_name = data.category_name;
+		    var adress = data.adress;
+		    var adress_cp = data.adress_cp;
+		    var adress_ville = data.adress_ville;
+		    var note_ambiance = data.note_ambiance;
+		    var note_food = data.note_food;
+		    var photo_img = data.photo_img;
 		     
 		    // load list of categories
 $.getJSON("http://localhost/GB_API/api/category/read.php", function(data){
@@ -65,6 +71,37 @@ update_activity_html+="<form id='update-activity-form' action='#' method='post' 
         update_activity_html+="</tr>";
  
         update_activity_html+="<tr>";
+
+        // adress field
+        update_activity_html+="<tr>";
+            update_activity_html+="<td>adress</td>";
+            update_activity_html+="<td><input value=\"" + adress + "\" type='text' name='adress' class='form-control' required /></td>";
+        update_activity_html+="</tr>";
+        // adress field
+        update_activity_html+="<tr>";
+            update_activity_html+="<td>adress_cp</td>";
+            update_activity_html+="<td><input value=\"" + adress_cp + "\" type='text' name='adress_cp' class='form-control' required /></td>";
+        update_activity_html+="</tr>";
+        // adress field
+        update_activity_html+="<tr>";
+            update_activity_html+="<td>adress_ville</td>";
+            update_activity_html+="<td><input value=\"" + adress_ville + "\" type='text' name='adress_ville' class='form-control' required /></td>";
+        update_activity_html+="</tr>";
+
+         update_activity_html+="<tr>";
+            update_activity_html+="<td>note_ambiance</td>";
+            update_activity_html+="<td><input value=\"" + note_ambiance + "\" type='text' name='note_ambiance' class='form-control' required /></td>";
+        update_activity_html+="</tr>";
+
+         update_activity_html+="<tr>";
+            update_activity_html+="<td>note_food</td>";
+            update_activity_html+="<td><input value=\"" + note_food + "\" type='text' name='note_food' class='form-control' required /></td>";
+        update_activity_html+="</tr>";
+
+         update_activity_html+="<tr>";
+            update_activity_html+="<td>photo_img</td>";
+            update_activity_html+="<td><input value=\"" + photo_img + "\" type='text' name='photo_img' class='form-control' required /></td>";
+        update_activity_html+="</tr>";
  
             // hidden 'activity id' to identify which record to delete
             update_activity_html+="<td><input value=\"" + id + "\" name='id' type='hidden' /></td>";
@@ -84,7 +121,7 @@ update_activity_html+="</form>";
 $("#page-content").html(update_activity_html);
  
 // chage page title
-changePageTitle("Update Product");
+changePageTitle("Update Activity");
 });
 		});
     });

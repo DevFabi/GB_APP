@@ -28,6 +28,18 @@ read_one_activity_html+="<table class='table table-bordered table-hover'>";
         read_one_activity_html+="<td>Price</td>";
         read_one_activity_html+="<td>" + data.price + "</td>";
     read_one_activity_html+="</tr>";
+
+     // activity adress
+    read_one_activity_html+="<tr>";
+        read_one_activity_html+="<td>adress</td>";
+        read_one_activity_html+="<td>" + data.adress + "</td>";
+    read_one_activity_html+="</tr>";
+
+     // activity adress_cp
+    read_one_activity_html+="<tr>";
+        read_one_activity_html+="<td>adress_cp</td>";
+        read_one_activity_html+="<td>" + data.adress_cp + "</td>";
+    read_one_activity_html+="</tr>";
  
     // activity category name
     read_one_activity_html+="<tr>";
