@@ -19,26 +19,50 @@ read_one_activity_html+="<table class='table table-bordered table-hover'>";
  
     // activity name
     read_one_activity_html+="<tr>";
-        read_one_activity_html+="<td class='w-30-pct'>Name</td>";
+        read_one_activity_html+="<td class='w-30-pct'>Nom</td>";
         read_one_activity_html+="<td class='w-70-pct'>" + data.name + "</td>";
     read_one_activity_html+="</tr>";
  
     // activity price
     read_one_activity_html+="<tr>";
-        read_one_activity_html+="<td>Price</td>";
+        read_one_activity_html+="<td>Prix</td>";
         read_one_activity_html+="<td>" + data.price + "</td>";
     read_one_activity_html+="</tr>";
 
      // activity adress
     read_one_activity_html+="<tr>";
-        read_one_activity_html+="<td>adress</td>";
+        read_one_activity_html+="<td>Adresse</td>";
         read_one_activity_html+="<td>" + data.adress + "</td>";
     read_one_activity_html+="</tr>";
 
      // activity adress_cp
     read_one_activity_html+="<tr>";
-        read_one_activity_html+="<td>adress_cp</td>";
+        read_one_activity_html+="<td>Code postal</td>";
         read_one_activity_html+="<td>" + data.adress_cp + "</td>";
+    read_one_activity_html+="</tr>";
+
+     // activity Ville
+    read_one_activity_html+="<tr>";
+        read_one_activity_html+="<td>Ville</td>";
+        read_one_activity_html+="<td>" + data.adress_ville + "</td>";
+    read_one_activity_html+="</tr>";
+
+    // activity note_ambiance
+    read_one_activity_html+="<tr>";
+        read_one_activity_html+="<td>Note ambiance</td>";
+        read_one_activity_html+="<td>" + data.note_ambiance + "</td>";
+    read_one_activity_html+="</tr>";
+
+    // activity food note
+    read_one_activity_html+="<tr>";
+        read_one_activity_html+="<td>Note food</td>";
+        read_one_activity_html+="<td>" + data.note_food + "</td>";
+    read_one_activity_html+="</tr>";
+
+     // activity photo
+    read_one_activity_html+="<tr>";
+        read_one_activity_html+="<td>Photo</td>";
+        read_one_activity_html+="<td><img src="  + data.photo_img + "/></td>";
     read_one_activity_html+="</tr>";
  
     // activity category name

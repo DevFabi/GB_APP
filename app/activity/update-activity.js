@@ -12,6 +12,7 @@ $(document).ready(function(){
 		    var price = data.price;
 		    var category_id = data.category_id;
 		    var category_name = data.category_name;
+		    var adress_id = data.adress_id;
 		    var adress = data.adress;
 		    var adress_cp = data.adress_cp;
 		    var adress_ville = data.adress_ville;
@@ -54,13 +55,13 @@ update_activity_html+="<form id='update-activity-form' action='#' method='post' 
  
         // name field
         update_activity_html+="<tr>";
-            update_activity_html+="<td>Name</td>";
+            update_activity_html+="<td>Nom</td>";
             update_activity_html+="<td><input value=\"" + name + "\" type='text' name='name' class='form-control' required /></td>";
         update_activity_html+="</tr>";
  
         // price field
         update_activity_html+="<tr>";
-            update_activity_html+="<td>Price</td>";
+            update_activity_html+="<td>Prix</td>";
             update_activity_html+="<td><input value=\"" + price + "\" type='number' min='1' name='price' class='form-control' required /></td>";
         update_activity_html+="</tr>";
  
@@ -74,21 +75,21 @@ update_activity_html+="<form id='update-activity-form' action='#' method='post' 
 
         // adress field
         update_activity_html+="<tr>";
-            update_activity_html+="<td>adress</td>";
+            update_activity_html+="<td>Adresse</td>";
             update_activity_html+="<td><input value=\"" + adress + "\" type='text' name='adress' class='form-control' required /></td>";
         update_activity_html+="</tr>";
         // adress field
         update_activity_html+="<tr>";
-            update_activity_html+="<td>adress_cp</td>";
+            update_activity_html+="<td>Code postal</td>";
             update_activity_html+="<td><input value=\"" + adress_cp + "\" type='text' name='adress_cp' class='form-control' required /></td>";
         update_activity_html+="</tr>";
         // adress field
         update_activity_html+="<tr>";
-            update_activity_html+="<td>adress_ville</td>";
+            update_activity_html+="<td>Ville</td>";
             update_activity_html+="<td><input value=\"" + adress_ville + "\" type='text' name='adress_ville' class='form-control' required /></td>";
         update_activity_html+="</tr>";
 
-         update_activity_html+="<tr>";
+/*         update_activity_html+="<tr>";
             update_activity_html+="<td>note_ambiance</td>";
             update_activity_html+="<td><input value=\"" + note_ambiance + "\" type='text' name='note_ambiance' class='form-control' required /></td>";
         update_activity_html+="</tr>";
@@ -101,10 +102,11 @@ update_activity_html+="<form id='update-activity-form' action='#' method='post' 
          update_activity_html+="<tr>";
             update_activity_html+="<td>photo_img</td>";
             update_activity_html+="<td><input value=\"" + photo_img + "\" type='text' name='photo_img' class='form-control' required /></td>";
-        update_activity_html+="</tr>";
+        update_activity_html+="</tr>";*/
  
             // hidden 'activity id' to identify which record to delete
             update_activity_html+="<td><input value=\"" + id + "\" name='id' type='hidden' /></td>";
+            update_activity_html+="<td><input value=\"" + adress_id + "\" name='adress_id' type='hidden' /></td>";
  
             // button to submit form
             update_activity_html+="<td>";
